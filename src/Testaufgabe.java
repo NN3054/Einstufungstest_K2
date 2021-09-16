@@ -1,3 +1,6 @@
+/**
+ * @author nn
+ */
 public class Testaufgabe {
     public static void main(String[] args) {
 
@@ -8,9 +11,11 @@ public class Testaufgabe {
         int myResSum1 = myMult(21 , 4);
         int myResSum2 = myMult(2, 3500);
 
+        System.out.println("MyMult output:");
         System.out.println(result);
         System.out.println(myResSum1);
         System.out.println(myResSum2);
+        System.out.println("------");
         //endregion
 
         //region GetThird
@@ -18,9 +23,11 @@ public class Testaufgabe {
         String myResString2 = getThird("Teststring", "bleibt", test.substring(0, 10));
         String myResString3 = getThird("EP1", "EP1", "EP1");
 
+        System.out.println("GetThird output:");
         System.out.println(myResString1);
         System.out.println(myResString2);
         System.out.println(myResString3);
+        System.out.println("------");
         //endregion
 
         //region replaceNthChar
@@ -29,13 +36,16 @@ public class Testaufgabe {
         String resText3 = replaceNthChar(test, 10, '-');
         String resText4 = replaceNthChar(test, 30, 'X');
 
+        System.out.println("ReplaceNthChar output:");
         System.out.println(resText1);
         System.out.println(resText2);
         System.out.println(resText3);
         System.out.println(resText4);
+        System.out.println("------");
         //endregion
 
         //region PrintPattern
+        System.out.println("PrintPattern output:");
         printPattern(3, '*');
         printPattern(5, '+');
         //endregion
