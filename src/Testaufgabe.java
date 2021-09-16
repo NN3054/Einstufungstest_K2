@@ -7,8 +7,8 @@ public class Testaufgabe {
         String test = "Teststring_Einstufungstest";
 
         //region MyMultiplier
-        short result = (short)myMult(3, 7);
-        int myResSum1 = myMult(21 , 4);
+        short result = (short) myMult(3, 7);
+        int myResSum1 = myMult(21, 4);
         int myResSum2 = myMult(2, 3500);
 
         System.out.println("MyMult output:");
