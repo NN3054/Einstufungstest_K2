@@ -67,25 +67,20 @@ public class Testaufgabe {
 
     public static String getThird(String a, String b, String c) {
 
-        String resString;
-
-        int aEqualsC = a.compareTo(c);
-        int aEqualsB = a.compareTo(b);
-        int bEqualsC = b.compareTo(c);
-
-        if (aEqualsB == 0 && aEqualsC == 0) {
-            resString = "alle gleich";
-        } else if (aEqualsB == 0 && aEqualsC != 0) {
-            resString = c;
-        } else if (aEqualsC == 0 && aEqualsB != 0) {
-            resString = b;
-        } else if (bEqualsC == 0 && aEqualsB != 0) {
-            resString = a;
-        } else {
-            resString = "alle unterschiedlich";
+        if (a.equals(b) && a.equals(c)) {
+            return "alle gleich";
+        }
+        if (a.equals(b)) {
+            return c;
+        }
+        if (a.equals(c)) {
+            return b;
+        }
+        if (b.equals(c)) {
+            return a;
         }
 
-        return resString;
+        return "alle unterschiedlich";
     }
 
     public static String replaceNthChar(String text, int n, char replaceChar) {
@@ -104,9 +99,7 @@ public class Testaufgabe {
             n += boundInt;
         }
 
-        String resText = String.valueOf(charText);
-
-        return resText;
+        return String.valueOf(charText);
     }
 
     public static void printPattern(int n, char character) {
